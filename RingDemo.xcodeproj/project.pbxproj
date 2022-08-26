@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A0BAD4B28AB9D5F009C6461 /* RJAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0BAD4A28AB9D5F009C6461 /* RJAdapterViewController.m */; };
+		7A0BAD4F28AB9E85009C6461 /* RJAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0BAD4E28AB9E85009C6461 /* RJAPIManager.m */; };
+		7A0BAD5628AC7E9F009C6461 /* RJPropertyListReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0BAD5528AC7E9F009C6461 /* RJPropertyListReformer.m */; };
+		7A0BAD5928AC809C009C6461 /* RJTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0BAD5828AC809C009C6461 /* RJTableViewCell.m */; };
+		7A0BAD6028ACE8A0009C6461 /* RJDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0BAD5F28ACE8A0009C6461 /* RJDataCenter.m */; };
+		7A0BAD6328ACE8F6009C6461 /* RJPersistanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0BAD6228ACE8F6009C6461 /* RJPersistanceViewController.m */; };
+		7A0BAD6628ACEAFA009C6461 /* RJTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0BAD6528ACEAFA009C6461 /* RJTable.m */; };
+		7A0BADB428B4B863009C6461 /* RJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0BADB328B4B863009C6461 /* RJViewController.m */; };
+		7A0BADBD28B7546F009C6461 /* RJProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0BADBC28B7546F009C6461 /* RJProxy.m */; };
+		7A0BADC128B76083009C6461 /* RJMemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0BADC028B76083009C6461 /* RJMemoryViewController.m */; };
+		7A0BADC428B760C8009C6461 /* RJTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0BADC328B760C8009C6461 /* RJTest.m */; };
+		7A0BADC728B7702F009C6461 /* RJTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0BADC628B7702F009C6461 /* RJTimer.m */; };
+		7A18DEC828A1FFDB00C34B8F /* RJPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18DEC728A1FFDB00C34B8F /* RJPerson.m */; };
+		7A328D9A287585EB00A0EBE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A328D99287585EB00A0EBE6 /* LaunchScreen.storyboard */; };
+		7A5F3B7E28A10CD300100A83 /* NSObject+RJUnrecognizedSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5F3B7D28A10CD300100A83 /* NSObject+RJUnrecognizedSelector.m */; };
+		7A82A78B2893CE9100F068EC /* RJReadWriteSecurityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A82A78A2893CE9100F068EC /* RJReadWriteSecurityViewController.m */; };
+		7A85BFCF2775C4E50089A00A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A85BFCE2775C4E50089A00A /* AppDelegate.m */; };
+		7A85BFD52775C4E50089A00A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A85BFD42775C4E50089A00A /* ViewController.m */; };
+		7A85BFDA2775C4E60089A00A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A85BFD92775C4E60089A00A /* Assets.xcassets */; };
+		7A85BFE02775C4E60089A00A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A85BFDF2775C4E60089A00A /* main.m */; };
+		7ACE886A28AA23690000E2C4 /* RJSimpleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE886928AA23690000E2C4 /* RJSimpleFactory.m */; };
+		7ACE886D28AA23AE0000E2C4 /* RJOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE886C28AA23AE0000E2C4 /* RJOperation.m */; };
+		7ACE887028AA24130000E2C4 /* RJOperationMantou.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE886F28AA24130000E2C4 /* RJOperationMantou.m */; };
+		B5FA73C658F1AF26D31E67A5 /* libPods-RingDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D07283A3E3A63BAE5AFE96 /* libPods-RingDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5EC3A0CA3388C87596AADC4D /* Pods-RingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingDemo.debug.xcconfig"; path = "Target Support Files/Pods-RingDemo/Pods-RingDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		7A0BAD4928AB9D5F009C6461 /* RJAdapterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAdapterViewController.h; sourceTree = "<group>"; };
+		7A0BAD4A28AB9D5F009C6461 /* RJAdapterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAdapterViewController.m; sourceTree = "<group>"; };
+		7A0BAD4C28AB9E5C009C6461 /* RJReformerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJReformerProtocol.h; sourceTree = "<group>"; };
+		7A0BAD4D28AB9E85009C6461 /* RJAPIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAPIManager.h; sourceTree = "<group>"; };
+		7A0BAD4E28AB9E85009C6461 /* RJAPIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAPIManager.m; sourceTree = "<group>"; };
+		7A0BAD5328AC7E64009C6461 /* PropertyListReformerKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PropertyListReformerKeys.h; sourceTree = "<group>"; };
+		7A0BAD5428AC7E9F009C6461 /* RJPropertyListReformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJPropertyListReformer.h; sourceTree = "<group>"; };
+		7A0BAD5528AC7E9F009C6461 /* RJPropertyListReformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJPropertyListReformer.m; sourceTree = "<group>"; };
+		7A0BAD5728AC809C009C6461 /* RJTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJTableViewCell.h; sourceTree = "<group>"; };
+		7A0BAD5828AC809C009C6461 /* RJTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJTableViewCell.m; sourceTree = "<group>"; };
+		7A0BAD5E28ACE8A0009C6461 /* RJDataCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJDataCenter.h; sourceTree = "<group>"; };
+		7A0BAD5F28ACE8A0009C6461 /* RJDataCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJDataCenter.m; sourceTree = "<group>"; };
+		7A0BAD6128ACE8F6009C6461 /* RJPersistanceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJPersistanceViewController.h; sourceTree = "<group>"; };
+		7A0BAD6228ACE8F6009C6461 /* RJPersistanceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJPersistanceViewController.m; sourceTree = "<group>"; };
+		7A0BAD6428ACEAFA009C6461 /* RJTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJTable.h; sourceTree = "<group>"; };
+		7A0BAD6528ACEAFA009C6461 /* RJTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJTable.m; sourceTree = "<group>"; };
+		7A0BADB228B4B863009C6461 /* RJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJViewController.h; sourceTree = "<group>"; };
+		7A0BADB328B4B863009C6461 /* RJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJViewController.m; sourceTree = "<group>"; };
+		7A0BADBB28B7546F009C6461 /* RJProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJProxy.h; sourceTree = "<group>"; };
+		7A0BADBC28B7546F009C6461 /* RJProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJProxy.m; sourceTree = "<group>"; };
+		7A0BADBF28B76083009C6461 /* RJMemoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJMemoryViewController.h; sourceTree = "<group>"; };
+		7A0BADC028B76083009C6461 /* RJMemoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJMemoryViewController.m; sourceTree = "<group>"; };
+		7A0BADC228B760C8009C6461 /* RJTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJTest.h; sourceTree = "<group>"; };
+		7A0BADC328B760C8009C6461 /* RJTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJTest.m; sourceTree = "<group>"; };
+		7A0BADC528B7702F009C6461 /* RJTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJTimer.h; sourceTree = "<group>"; };
+		7A0BADC628B7702F009C6461 /* RJTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJTimer.m; sourceTree = "<group>"; };
+		7A18DEC628A1FFDB00C34B8F /* RJPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJPerson.h; sourceTree = "<group>"; };
+		7A18DEC728A1FFDB00C34B8F /* RJPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJPerson.m; sourceTree = "<group>"; };
+		7A328D99287585EB00A0EBE6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A5F3B7C28A10CD300100A83 /* NSObject+RJUnrecognizedSelector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+RJUnrecognizedSelector.h"; sourceTree = "<group>"; };
+		7A5F3B7D28A10CD300100A83 /* NSObject+RJUnrecognizedSelector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RJUnrecognizedSelector.m"; sourceTree = "<group>"; };
+		7A82A7892893CE9100F068EC /* RJReadWriteSecurityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJReadWriteSecurityViewController.h; sourceTree = "<group>"; };
+		7A82A78A2893CE9100F068EC /* RJReadWriteSecurityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJReadWriteSecurityViewController.m; sourceTree = "<group>"; };
+		7A85BFCA2775C4E50089A00A /* RingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A85BFCD2775C4E50089A00A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7A85BFCE2775C4E50089A00A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7A85BFD32775C4E50089A00A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7A85BFD42775C4E50089A00A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7A85BFD92775C4E60089A00A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A85BFDE2775C4E60089A00A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A85BFDF2775C4E60089A00A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7ACE886828AA23690000E2C4 /* RJSimpleFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJSimpleFactory.h; sourceTree = "<group>"; };
+		7ACE886928AA23690000E2C4 /* RJSimpleFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJSimpleFactory.m; sourceTree = "<group>"; };
+		7ACE886B28AA23AE0000E2C4 /* RJOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJOperation.h; sourceTree = "<group>"; };
+		7ACE886C28AA23AE0000E2C4 /* RJOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJOperation.m; sourceTree = "<group>"; };
+		7ACE886E28AA24130000E2C4 /* RJOperationMantou.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJOperationMantou.h; sourceTree = "<group>"; };
+		7ACE886F28AA24130000E2C4 /* RJOperationMantou.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJOperationMantou.m; sourceTree = "<group>"; };
+		F6D07283A3E3A63BAE5AFE96 /* libPods-RingDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RingDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7FE9F9409395B17CB23E720 /* Pods-RingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingDemo.release.xcconfig"; path = "Target Support Files/Pods-RingDemo/Pods-RingDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A85BFC72775C4E50089A00A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5FA73C658F1AF26D31E67A5 /* libPods-RingDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20DB49B0A5FF7EDDAB27C016 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6D07283A3E3A63BAE5AFE96 /* libPods-RingDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A0BAD4828AB9D2D009C6461 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				7A0BAD4928AB9D5F009C6461 /* RJAdapterViewController.h */,
+				7A0BAD4A28AB9D5F009C6461 /* RJAdapterViewController.m */,
+				7A0BAD4C28AB9E5C009C6461 /* RJReformerProtocol.h */,
+				7A0BAD4D28AB9E85009C6461 /* RJAPIManager.h */,
+				7A0BAD4E28AB9E85009C6461 /* RJAPIManager.m */,
+				7A0BAD5328AC7E64009C6461 /* PropertyListReformerKeys.h */,
+				7A0BAD5428AC7E9F009C6461 /* RJPropertyListReformer.h */,
+				7A0BAD5528AC7E9F009C6461 /* RJPropertyListReformer.m */,
+				7A0BAD5728AC809C009C6461 /* RJTableViewCell.h */,
+				7A0BAD5828AC809C009C6461 /* RJTableViewCell.m */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		7A0BAD5D28ACE827009C6461 /* Persistance */ = {
+			isa = PBXGroup;
+			children = (
+				7A0BAD5E28ACE8A0009C6461 /* RJDataCenter.h */,
+				7A0BAD5F28ACE8A0009C6461 /* RJDataCenter.m */,
+				7A0BAD6128ACE8F6009C6461 /* RJPersistanceViewController.h */,
+				7A0BAD6228ACE8F6009C6461 /* RJPersistanceViewController.m */,
+				7A0BAD6428ACEAFA009C6461 /* RJTable.h */,
+				7A0BAD6528ACEAFA009C6461 /* RJTable.m */,
+			);
+			path = Persistance;
+			sourceTree = "<group>";
+		};
+		7A0BADBA28B7544C009C6461 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				7A0BADB228B4B863009C6461 /* RJViewController.h */,
+				7A0BADB328B4B863009C6461 /* RJViewController.m */,
+				7A0BADBB28B7546F009C6461 /* RJProxy.h */,
+				7A0BADBC28B7546F009C6461 /* RJProxy.m */,
+				7A0BADC528B7702F009C6461 /* RJTimer.h */,
+				7A0BADC628B7702F009C6461 /* RJTimer.m */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		7A0BADBE28B76053009C6461 /* 内存管理 */ = {
+			isa = PBXGroup;
+			children = (
+				7A0BADBF28B76083009C6461 /* RJMemoryViewController.h */,
+				7A0BADC028B76083009C6461 /* RJMemoryViewController.m */,
+				7A0BADC228B760C8009C6461 /* RJTest.h */,
+				7A0BADC328B760C8009C6461 /* RJTest.m */,
+			);
+			path = "内存管理";
+			sourceTree = "<group>";
+		};
+		7A5F3B7828A10C4E00100A83 /* CrashProtect */ = {
+			isa = PBXGroup;
+			children = (
+				7A5F3B7C28A10CD300100A83 /* NSObject+RJUnrecognizedSelector.h */,
+				7A5F3B7D28A10CD300100A83 /* NSObject+RJUnrecognizedSelector.m */,
+				7A18DEC628A1FFDB00C34B8F /* RJPerson.h */,
+				7A18DEC728A1FFDB00C34B8F /* RJPerson.m */,
+			);
+			path = CrashProtect;
+			sourceTree = "<group>";
+		};
+		7A82A7882893CE5200F068EC /* ReadWriteSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				7A82A7892893CE9100F068EC /* RJReadWriteSecurityViewController.h */,
+				7A82A78A2893CE9100F068EC /* RJReadWriteSecurityViewController.m */,
+			);
+			path = ReadWriteSecurity;
+			sourceTree = "<group>";
+		};
+		7A85BFC12775C4E50089A00A = {
+			isa = PBXGroup;
+			children = (
+				7A85BFCC2775C4E50089A00A /* RingDemo */,
+				7A85BFCB2775C4E50089A00A /* Products */,
+				D0EEBA65194CA07A6369FA51 /* Pods */,
+				20DB49B0A5FF7EDDAB27C016 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7A85BFCB2775C4E50089A00A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A85BFCA2775C4E50089A00A /* RingDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A85BFCC2775C4E50089A00A /* RingDemo */ = {
+			isa = PBXGroup;
+			children = (
+				7A0BADBE28B76053009C6461 /* 内存管理 */,
+				7A0BADBA28B7544C009C6461 /* Timer */,
+				7A0BAD5D28ACE827009C6461 /* Persistance */,
+				7A0BAD4828AB9D2D009C6461 /* Adapter */,
+				7ACE886728AA23330000E2C4 /* Factory */,
+				7A5F3B7828A10C4E00100A83 /* CrashProtect */,
+				7A82A7882893CE5200F068EC /* ReadWriteSecurity */,
+				7A85BFCD2775C4E50089A00A /* AppDelegate.h */,
+				7A85BFCE2775C4E50089A00A /* AppDelegate.m */,
+				7A85BFD32775C4E50089A00A /* ViewController.h */,
+				7A85BFD42775C4E50089A00A /* ViewController.m */,
+				7A85BFD92775C4E60089A00A /* Assets.xcassets */,
+				7A85BFDE2775C4E60089A00A /* Info.plist */,
+				7A85BFDF2775C4E60089A00A /* main.m */,
+				7A328D99287585EB00A0EBE6 /* LaunchScreen.storyboard */,
+			);
+			path = RingDemo;
+			sourceTree = "<group>";
+		};
+		7ACE886728AA23330000E2C4 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				7ACE886828AA23690000E2C4 /* RJSimpleFactory.h */,
+				7ACE886928AA23690000E2C4 /* RJSimpleFactory.m */,
+				7ACE886B28AA23AE0000E2C4 /* RJOperation.h */,
+				7ACE886C28AA23AE0000E2C4 /* RJOperation.m */,
+				7ACE886E28AA24130000E2C4 /* RJOperationMantou.h */,
+				7ACE886F28AA24130000E2C4 /* RJOperationMantou.m */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		D0EEBA65194CA07A6369FA51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EC3A0CA3388C87596AADC4D /* Pods-RingDemo.debug.xcconfig */,
+				F7FE9F9409395B17CB23E720 /* Pods-RingDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A85BFC92775C4E50089A00A /* RingDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A85BFE32775C4E60089A00A /* Build configuration list for PBXNativeTarget "RingDemo" */;
+			buildPhases = (
+				CF08F4ED4CE3E52F845C1283 /* [CP] Check Pods Manifest.lock */,
+				7A85BFC62775C4E50089A00A /* Sources */,
+				7A85BFC72775C4E50089A00A /* Frameworks */,
+				7A85BFC82775C4E50089A00A /* Resources */,
+				A374D62C4C7DDAF96E427F9B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RingDemo;
+			productName = RingDemo;
+			productReference = 7A85BFCA2775C4E50089A00A /* RingDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A85BFC22775C4E50089A00A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = RJ;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					7A85BFC92775C4E50089A00A = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 7A85BFC52775C4E50089A00A /* Build configuration list for PBXProject "RingDemo" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A85BFC12775C4E50089A00A;
+			productRefGroup = 7A85BFCB2775C4E50089A00A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A85BFC92775C4E50089A00A /* RingDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A85BFC82775C4E50089A00A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A328D9A287585EB00A0EBE6 /* LaunchScreen.storyboard in Resources */,
+				7A85BFDA2775C4E60089A00A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A374D62C4C7DDAF96E427F9B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RingDemo/Pods-RingDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RingDemo/Pods-RingDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RingDemo/Pods-RingDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF08F4ED4CE3E52F845C1283 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RingDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A85BFC62775C4E50089A00A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A18DEC828A1FFDB00C34B8F /* RJPerson.m in Sources */,
+				7A0BAD4F28AB9E85009C6461 /* RJAPIManager.m in Sources */,
+				7A0BADC728B7702F009C6461 /* RJTimer.m in Sources */,
+				7A82A78B2893CE9100F068EC /* RJReadWriteSecurityViewController.m in Sources */,
+				7A0BAD6328ACE8F6009C6461 /* RJPersistanceViewController.m in Sources */,
+				7ACE886A28AA23690000E2C4 /* RJSimpleFactory.m in Sources */,
+				7A85BFD52775C4E50089A00A /* ViewController.m in Sources */,
+				7A0BAD4B28AB9D5F009C6461 /* RJAdapterViewController.m in Sources */,
+				7A0BAD5628AC7E9F009C6461 /* RJPropertyListReformer.m in Sources */,
+				7A0BADBD28B7546F009C6461 /* RJProxy.m in Sources */,
+				7A0BAD6628ACEAFA009C6461 /* RJTable.m in Sources */,
+				7ACE887028AA24130000E2C4 /* RJOperationMantou.m in Sources */,
+				7A0BAD5928AC809C009C6461 /* RJTableViewCell.m in Sources */,
+				7A5F3B7E28A10CD300100A83 /* NSObject+RJUnrecognizedSelector.m in Sources */,
+				7A0BAD6028ACE8A0009C6461 /* RJDataCenter.m in Sources */,
+				7ACE886D28AA23AE0000E2C4 /* RJOperation.m in Sources */,
+				7A85BFCF2775C4E50089A00A /* AppDelegate.m in Sources */,
+				7A85BFE02775C4E60089A00A /* main.m in Sources */,
+				7A0BADC128B76083009C6461 /* RJMemoryViewController.m in Sources */,
+				7A0BADB428B4B863009C6461 /* RJViewController.m in Sources */,
+				7A0BADC428B760C8009C6461 /* RJTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7A85BFE12775C4E60089A00A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7A85BFE22775C4E60089A00A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A85BFE42775C4E60089A00A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EC3A0CA3388C87596AADC4D /* Pods-RingDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D523PYS459;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RingDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.qihoo.RingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A85BFE52775C4E60089A00A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7FE9F9409395B17CB23E720 /* Pods-RingDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QH4CR3JHH7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RingDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.qihoo.RingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A85BFC52775C4E50089A00A /* Build configuration list for PBXProject "RingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A85BFE12775C4E60089A00A /* Debug */,
+				7A85BFE22775C4E60089A00A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A85BFE32775C4E60089A00A /* Build configuration list for PBXNativeTarget "RingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A85BFE42775C4E60089A00A /* Debug */,
+				7A85BFE52775C4E60089A00A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A85BFC22775C4E50089A00A /* Project object */;
+}
