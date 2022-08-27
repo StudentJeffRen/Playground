@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  RingDemo
+//
+//  Created by 任睿杰 on 2022/8/27.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "RJBasicHead.h"
+#import "UIView+RJConvenience.h"
+
+
+#endif /* PrefixHeader_pch */

@@ -10,6 +10,7 @@
 #import <SDWebImage/SDWebImage.h>
 #import "RJPerson.h"
 #import "RJViewController.h"
+#import "RJDrawerViewController.h"
 
 @interface ViewController ()
 
@@ -34,7 +35,7 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    RJViewController *vc = [[RJViewController alloc] init];
+    RJDrawerViewController *vc = [[RJDrawerViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

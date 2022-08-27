@@ -22,6 +22,9 @@
 		7A18DEC828A1FFDB00C34B8F /* RJPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18DEC728A1FFDB00C34B8F /* RJPerson.m */; };
 		7A328D9A287585EB00A0EBE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A328D99287585EB00A0EBE6 /* LaunchScreen.storyboard */; };
 		7A5F3B7E28A10CD300100A83 /* NSObject+RJUnrecognizedSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5F3B7D28A10CD300100A83 /* NSObject+RJUnrecognizedSelector.m */; };
+		7A68CF5F28B923D200760292 /* RJDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A68CF5E28B923D200760292 /* RJDrawerViewController.m */; };
+		7A68CF6228B923F800760292 /* RJDrawerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A68CF6128B923F800760292 /* RJDrawerView.m */; };
+		7A68CF6528B92A6E00760292 /* UIView+RJConvenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A68CF6428B92A6E00760292 /* UIView+RJConvenience.m */; };
 		7A82A78B2893CE9100F068EC /* RJReadWriteSecurityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A82A78A2893CE9100F068EC /* RJReadWriteSecurityViewController.m */; };
 		7A85BFCF2775C4E50089A00A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A85BFCE2775C4E50089A00A /* AppDelegate.m */; };
 		7A85BFD52775C4E50089A00A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A85BFD42775C4E50089A00A /* ViewController.m */; };
@@ -66,6 +69,14 @@
 		7A328D99287585EB00A0EBE6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A5F3B7C28A10CD300100A83 /* NSObject+RJUnrecognizedSelector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+RJUnrecognizedSelector.h"; sourceTree = "<group>"; };
 		7A5F3B7D28A10CD300100A83 /* NSObject+RJUnrecognizedSelector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RJUnrecognizedSelector.m"; sourceTree = "<group>"; };
+		7A68CF5D28B923D200760292 /* RJDrawerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJDrawerViewController.h; sourceTree = "<group>"; };
+		7A68CF5E28B923D200760292 /* RJDrawerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJDrawerViewController.m; sourceTree = "<group>"; };
+		7A68CF6028B923F800760292 /* RJDrawerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJDrawerView.h; sourceTree = "<group>"; };
+		7A68CF6128B923F800760292 /* RJDrawerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJDrawerView.m; sourceTree = "<group>"; };
+		7A68CF6328B92A6E00760292 /* UIView+RJConvenience.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+RJConvenience.h"; sourceTree = "<group>"; };
+		7A68CF6428B92A6E00760292 /* UIView+RJConvenience.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+RJConvenience.m"; sourceTree = "<group>"; };
+		7A68CF6628B9FFE600760292 /* RJBasicHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBasicHead.h; sourceTree = "<group>"; };
+		7A68CF6728BA008C00760292 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		7A82A7892893CE9100F068EC /* RJReadWriteSecurityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJReadWriteSecurityViewController.h; sourceTree = "<group>"; };
 		7A82A78A2893CE9100F068EC /* RJReadWriteSecurityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJReadWriteSecurityViewController.m; sourceTree = "<group>"; };
 		7A85BFCA2775C4E50089A00A /* RingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +182,19 @@
 			path = CrashProtect;
 			sourceTree = "<group>";
 		};
+		7A68CF5C28B9238F00760292 /* BottomDrawer */ = {
+			isa = PBXGroup;
+			children = (
+				7A68CF5D28B923D200760292 /* RJDrawerViewController.h */,
+				7A68CF5E28B923D200760292 /* RJDrawerViewController.m */,
+				7A68CF6028B923F800760292 /* RJDrawerView.h */,
+				7A68CF6128B923F800760292 /* RJDrawerView.m */,
+				7A68CF6328B92A6E00760292 /* UIView+RJConvenience.h */,
+				7A68CF6428B92A6E00760292 /* UIView+RJConvenience.m */,
+			);
+			path = BottomDrawer;
+			sourceTree = "<group>";
+		};
 		7A82A7882893CE5200F068EC /* ReadWriteSecurity */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +225,7 @@
 		7A85BFCC2775C4E50089A00A /* RingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7A68CF5C28B9238F00760292 /* BottomDrawer */,
 				7A0BADBE28B76053009C6461 /* 内存管理 */,
 				7A0BADBA28B7544C009C6461 /* Timer */,
 				7A0BAD5D28ACE827009C6461 /* Persistance */,
@@ -216,6 +241,8 @@
 				7A85BFDE2775C4E60089A00A /* Info.plist */,
 				7A85BFDF2775C4E60089A00A /* main.m */,
 				7A328D99287585EB00A0EBE6 /* LaunchScreen.storyboard */,
+				7A68CF6628B9FFE600760292 /* RJBasicHead.h */,
+				7A68CF6728BA008C00760292 /* PrefixHeader.pch */,
 			);
 			path = RingDemo;
 			sourceTree = "<group>";
@@ -362,11 +389,13 @@
 				7A82A78B2893CE9100F068EC /* RJReadWriteSecurityViewController.m in Sources */,
 				7A0BAD6328ACE8F6009C6461 /* RJPersistanceViewController.m in Sources */,
 				7ACE886A28AA23690000E2C4 /* RJSimpleFactory.m in Sources */,
+				7A68CF6528B92A6E00760292 /* UIView+RJConvenience.m in Sources */,
 				7A85BFD52775C4E50089A00A /* ViewController.m in Sources */,
 				7A0BAD4B28AB9D5F009C6461 /* RJAdapterViewController.m in Sources */,
 				7A0BAD5628AC7E9F009C6461 /* RJPropertyListReformer.m in Sources */,
 				7A0BADBD28B7546F009C6461 /* RJProxy.m in Sources */,
 				7A0BAD6628ACEAFA009C6461 /* RJTable.m in Sources */,
+				7A68CF5F28B923D200760292 /* RJDrawerViewController.m in Sources */,
 				7ACE887028AA24130000E2C4 /* RJOperationMantou.m in Sources */,
 				7A0BAD5928AC809C009C6461 /* RJTableViewCell.m in Sources */,
 				7A5F3B7E28A10CD300100A83 /* NSObject+RJUnrecognizedSelector.m in Sources */,
@@ -375,6 +404,7 @@
 				7A85BFCF2775C4E50089A00A /* AppDelegate.m in Sources */,
 				7A85BFE02775C4E60089A00A /* main.m in Sources */,
 				7A0BADC128B76083009C6461 /* RJMemoryViewController.m in Sources */,
+				7A68CF6228B923F800760292 /* RJDrawerView.m in Sources */,
 				7A0BADB428B4B863009C6461 /* RJViewController.m in Sources */,
 				7A0BADC428B760C8009C6461 /* RJTest.m in Sources */,
 			);
@@ -503,7 +533,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D523PYS459;
+				DEVELOPMENT_TEAM = ZJ52L3N5X3;
+				GCC_PREFIX_HEADER = RingDemo/PrefixHeader.pch;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RingDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -532,6 +563,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QH4CR3JHH7;
+				GCC_PREFIX_HEADER = RingDemo/PrefixHeader.pch;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RingDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
