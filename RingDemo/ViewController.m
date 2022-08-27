@@ -32,6 +32,7 @@
 //    [self gcdSerialDemo];
 //    [self gcdConcurrentDemo];
     
+    [self dispatchGroup];
     
 }
 
@@ -117,6 +118,35 @@
     });
     
     NSLog(@"test end %@", NSThread.currentThread);
+}
+
+- (void)dispatchGroup {
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_queue_t queue = dispatch_queue_create("my_queue", DISPATCH_QUEUE_CONCURRENT);
+    
+    dispatch_group_async(group, queue, ^{
+        NSLog(@"A");
+    });
+    
+    dispatch_group_async(group, queue, ^{
+        NSLog(@"B");
+    });
+    
+    dispatch_group_notify(group, queue, ^{
+        NSLog(@"C");
+    });
+}
+
+// 使用场景：读写安全
+- (void)dispatchBarrier {
+    dispatch_queue_t queue = dispatch_queue_create("rw_queue", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_async(queue, ^{
+        
+    });
+    
+    dispatch_barrier_async(queue, ^{
+        // 在前面提交到队列中的任务执行完之前，栅栏 block 不会执行
+    });
 }
 
 @end
