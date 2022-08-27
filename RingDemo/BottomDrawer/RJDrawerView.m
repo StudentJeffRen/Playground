@@ -92,6 +92,10 @@ static CGFloat const kSwipeThreshold = -150;
 }
 
 - (void)animateIsExpandAction:(BOOL)isExpand {
+    if ([self.contentView isKindOfClass:[UIScrollView class]]) {
+        [(UIScrollView *)self.contentView setScrollEnabled:isExpand];
+    }
+    
     [UIView animateWithDuration:0.3 animations:^{
         self.gestureView.rj_top = isExpand ? self.offSetTop : self.offSetBottom;;
         self.backgroundView.alpha = isExpand ? 1 : 0;
