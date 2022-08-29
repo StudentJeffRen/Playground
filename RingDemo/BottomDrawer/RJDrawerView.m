@@ -103,25 +103,15 @@ static CGFloat const kSwipeThreshold = -150;
 }
 
 #pragma mark - UIGestureRecognizerDelegate
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRequireFailureOfGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
-    // gestureRecognizer: panGesture
-    // otherGestureRecogonizer: tableView scroll
-    // 返回值：是否将 tableView 滚动手势置为失败
-    if ([self.contentView isKindOfClass:[UIScrollView class]]) {
-        if (((UIScrollView *)self.contentView).contentOffset.y > 0) {
-            return YES;
-        }
-    }
-
-    return NO;
-}
-
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
     if ([self.contentView isKindOfClass:[UIScrollView class]]) {
         UIScrollView *scrollView = (UIScrollView *)self.contentView;
         UIPanGestureRecognizer *gesture = (UIPanGestureRecognizer *)gestureRecognizer;
         CGFloat direction = [gesture velocityInView:self.gestureView].y;
         
+        // 两种情况禁用 scrollView 滚动
+        // 1. 展开状态，列表在最顶部，手势向下
+        // 2. 在最底部
         if ((self.isExpanded && scrollView.contentOffset.y == 0 && direction > 0) || self.gestureView.rj_top == self.offSetBottom) {
             scrollView.scrollEnabled = NO;
         } else {
@@ -129,6 +119,7 @@ static CGFloat const kSwipeThreshold = -150;
         }
     }
     
+    // 始终不允许同时识别
     return NO;
 }
 
