@@ -11,6 +11,7 @@
 #import "RJPerson.h"
 #import "RJViewController.h"
 #import "RJDrawerViewController.h"
+#import "RJFrameAndBoundsViewController.h"
 
 @interface ViewController ()
 
@@ -35,7 +36,7 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    RJDrawerViewController *vc = [[RJDrawerViewController alloc] init];
+    RJFrameAndBoundsViewController *vc = [[RJFrameAndBoundsViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
