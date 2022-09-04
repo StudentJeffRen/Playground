@@ -38,11 +38,7 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-<<<<<<< HEAD
     RJFrameAndBoundsViewController *vc = [[RJFrameAndBoundsViewController alloc] init];
-=======
-    RJBlockViewController *vc = [[RJBlockViewController alloc] init];
->>>>>>> f3f7150 (feat: Block 原理)
     [self.navigationController pushViewController:vc animated:YES];
 }
 
