@@ -22,6 +22,8 @@
 		7A0BADC728B7702F009C6461 /* RJTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0BADC628B7702F009C6461 /* RJTimer.m */; };
 		7A18DEC828A1FFDB00C34B8F /* RJPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18DEC728A1FFDB00C34B8F /* RJPerson.m */; };
 		7A328D9A287585EB00A0EBE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A328D99287585EB00A0EBE6 /* LaunchScreen.storyboard */; };
+		7A4A6A5828BB7A0E0078667F /* RJBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A6A5728BB7A0E0078667F /* RJBlockViewController.m */; };
+		7A4A6A5B28BB7A720078667F /* MyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A6A5A28BB7A720078667F /* MyObject.m */; };
 		7A5F3B7E28A10CD300100A83 /* NSObject+RJUnrecognizedSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5F3B7D28A10CD300100A83 /* NSObject+RJUnrecognizedSelector.m */; };
 		7A68CF5F28B923D200760292 /* RJDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A68CF5E28B923D200760292 /* RJDrawerViewController.m */; };
 		7A68CF6228B923F800760292 /* RJDrawerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A68CF6128B923F800760292 /* RJDrawerView.m */; };
@@ -73,6 +75,11 @@
 		7A18DEC628A1FFDB00C34B8F /* RJPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJPerson.h; sourceTree = "<group>"; };
 		7A18DEC728A1FFDB00C34B8F /* RJPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJPerson.m; sourceTree = "<group>"; };
 		7A328D99287585EB00A0EBE6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A4A6A5628BB7A0E0078667F /* RJBlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBlockViewController.h; sourceTree = "<group>"; };
+		7A4A6A5728BB7A0E0078667F /* RJBlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBlockViewController.m; sourceTree = "<group>"; };
+		7A4A6A5928BB7A720078667F /* MyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyObject.h; sourceTree = "<group>"; };
+		7A4A6A5A28BB7A720078667F /* MyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyObject.m; sourceTree = "<group>"; };
+		7A4A6A5C28BB7AA70078667F /* ViewController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ViewController.cpp; sourceTree = "<group>"; };
 		7A5F3B7C28A10CD300100A83 /* NSObject+RJUnrecognizedSelector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+RJUnrecognizedSelector.h"; sourceTree = "<group>"; };
 		7A5F3B7D28A10CD300100A83 /* NSObject+RJUnrecognizedSelector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RJUnrecognizedSelector.m"; sourceTree = "<group>"; };
 		7A68CF5D28B923D200760292 /* RJDrawerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJDrawerViewController.h; sourceTree = "<group>"; };
@@ -229,6 +236,18 @@
 			path = MVVMDemo;
 			sourceTree = "<group>";
 		};
+		7A825E9528BA69370055E35C /* Block 底层实现 */ = {
+			isa = PBXGroup;
+			children = (
+				7A4A6A5628BB7A0E0078667F /* RJBlockViewController.h */,
+				7A4A6A5728BB7A0E0078667F /* RJBlockViewController.m */,
+				7A4A6A5C28BB7AA70078667F /* ViewController.cpp */,
+				7A4A6A5928BB7A720078667F /* MyObject.h */,
+				7A4A6A5A28BB7A720078667F /* MyObject.m */,
+			);
+			path = "Block 底层实现";
+			sourceTree = "<group>";
+		};
 		7A82A7882893CE5200F068EC /* ReadWriteSecurity */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				7A06A94728C04DC800F0C892 /* FrameAndBounds */,
+				7A825E9528BA69370055E35C /* Block 底层实现 */,
 				7A825E5228BA3F380055E35C /* MVVMDemo */,
 				7A68CF5C28B9238F00760292 /* BottomDrawer */,
 				7A0BADBE28B76053009C6461 /* 内存管理 */,
@@ -419,9 +439,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A4A6A5828BB7A0E0078667F /* RJBlockViewController.m in Sources */,
 				7A18DEC828A1FFDB00C34B8F /* RJPerson.m in Sources */,
 				7A06A94A28C04DE900F0C892 /* RJFrameAndBoundsViewController.m in Sources */,
 				7A0BAD4F28AB9E85009C6461 /* RJAPIManager.m in Sources */,
+				7A4A6A5B28BB7A720078667F /* MyObject.m in Sources */,
 				7A0BADC728B7702F009C6461 /* RJTimer.m in Sources */,
 				7A82A78B2893CE9100F068EC /* RJReadWriteSecurityViewController.m in Sources */,
 				7A0BAD6328ACE8F6009C6461 /* RJPersistanceViewController.m in Sources */,
