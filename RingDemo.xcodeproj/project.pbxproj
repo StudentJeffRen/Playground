@@ -26,6 +26,9 @@
 		7A68CF5F28B923D200760292 /* RJDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A68CF5E28B923D200760292 /* RJDrawerViewController.m */; };
 		7A68CF6228B923F800760292 /* RJDrawerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A68CF6128B923F800760292 /* RJDrawerView.m */; };
 		7A68CF6528B92A6E00760292 /* UIView+RJConvenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A68CF6428B92A6E00760292 /* UIView+RJConvenience.m */; };
+		7A825E5928BA3FA40055E35C /* RJMVVMDemoPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A825E5328BA3FA30055E35C /* RJMVVMDemoPerson.m */; };
+		7A825E5A28BA3FA40055E35C /* RJPersonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A825E5528BA3FA30055E35C /* RJPersonViewModel.m */; };
+		7A825E5B28BA3FA40055E35C /* RJMVVMDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A825E5628BA3FA30055E35C /* RJMVVMDemoViewController.m */; };
 		7A82A78B2893CE9100F068EC /* RJReadWriteSecurityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A82A78A2893CE9100F068EC /* RJReadWriteSecurityViewController.m */; };
 		7A85BFCF2775C4E50089A00A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A85BFCE2775C4E50089A00A /* AppDelegate.m */; };
 		7A85BFD52775C4E50089A00A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A85BFD42775C4E50089A00A /* ViewController.m */; };
@@ -80,6 +83,12 @@
 		7A68CF6428B92A6E00760292 /* UIView+RJConvenience.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+RJConvenience.m"; sourceTree = "<group>"; };
 		7A68CF6628B9FFE600760292 /* RJBasicHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBasicHead.h; sourceTree = "<group>"; };
 		7A68CF6728BA008C00760292 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		7A825E5328BA3FA30055E35C /* RJMVVMDemoPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJMVVMDemoPerson.m; sourceTree = "<group>"; };
+		7A825E5428BA3FA30055E35C /* RJMVVMDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJMVVMDemoViewController.h; sourceTree = "<group>"; };
+		7A825E5528BA3FA30055E35C /* RJPersonViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJPersonViewModel.m; sourceTree = "<group>"; };
+		7A825E5628BA3FA30055E35C /* RJMVVMDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJMVVMDemoViewController.m; sourceTree = "<group>"; };
+		7A825E5728BA3FA30055E35C /* RJMVVMDemoPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJMVVMDemoPerson.h; sourceTree = "<group>"; };
+		7A825E5828BA3FA30055E35C /* RJPersonViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJPersonViewModel.h; sourceTree = "<group>"; };
 		7A82A7892893CE9100F068EC /* RJReadWriteSecurityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJReadWriteSecurityViewController.h; sourceTree = "<group>"; };
 		7A82A78A2893CE9100F068EC /* RJReadWriteSecurityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJReadWriteSecurityViewController.m; sourceTree = "<group>"; };
 		7A85BFCA2775C4E50089A00A /* RingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,6 +216,19 @@
 			path = BottomDrawer;
 			sourceTree = "<group>";
 		};
+		7A825E5228BA3F380055E35C /* MVVMDemo */ = {
+			isa = PBXGroup;
+			children = (
+				7A825E5728BA3FA30055E35C /* RJMVVMDemoPerson.h */,
+				7A825E5328BA3FA30055E35C /* RJMVVMDemoPerson.m */,
+				7A825E5828BA3FA30055E35C /* RJPersonViewModel.h */,
+				7A825E5528BA3FA30055E35C /* RJPersonViewModel.m */,
+				7A825E5428BA3FA30055E35C /* RJMVVMDemoViewController.h */,
+				7A825E5628BA3FA30055E35C /* RJMVVMDemoViewController.m */,
+			);
+			path = MVVMDemo;
+			sourceTree = "<group>";
+		};
 		7A82A7882893CE5200F068EC /* ReadWriteSecurity */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				7A06A94728C04DC800F0C892 /* FrameAndBounds */,
+				7A825E5228BA3F380055E35C /* MVVMDemo */,
 				7A68CF5C28B9238F00760292 /* BottomDrawer */,
 				7A0BADBE28B76053009C6461 /* 内存管理 */,
 				7A0BADBA28B7544C009C6461 /* Timer */,
@@ -406,8 +429,10 @@
 				7A68CF6528B92A6E00760292 /* UIView+RJConvenience.m in Sources */,
 				7A85BFD52775C4E50089A00A /* ViewController.m in Sources */,
 				7A0BAD4B28AB9D5F009C6461 /* RJAdapterViewController.m in Sources */,
+				7A825E5B28BA3FA40055E35C /* RJMVVMDemoViewController.m in Sources */,
 				7A0BAD5628AC7E9F009C6461 /* RJPropertyListReformer.m in Sources */,
 				7A0BADBD28B7546F009C6461 /* RJProxy.m in Sources */,
+				7A825E5928BA3FA40055E35C /* RJMVVMDemoPerson.m in Sources */,
 				7A0BAD6628ACEAFA009C6461 /* RJTable.m in Sources */,
 				7A68CF5F28B923D200760292 /* RJDrawerViewController.m in Sources */,
 				7ACE887028AA24130000E2C4 /* RJOperationMantou.m in Sources */,
@@ -421,6 +446,7 @@
 				7A68CF6228B923F800760292 /* RJDrawerView.m in Sources */,
 				7A0BADB428B4B863009C6461 /* RJViewController.m in Sources */,
 				7A0BADC428B760C8009C6461 /* RJTest.m in Sources */,
+				7A825E5A28BA3FA40055E35C /* RJPersonViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
