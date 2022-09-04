@@ -39,6 +39,8 @@
 		7ACE886A28AA23690000E2C4 /* RJSimpleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE886928AA23690000E2C4 /* RJSimpleFactory.m */; };
 		7ACE886D28AA23AE0000E2C4 /* RJOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE886C28AA23AE0000E2C4 /* RJOperation.m */; };
 		7ACE887028AA24130000E2C4 /* RJOperationMantou.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE886F28AA24130000E2C4 /* RJOperationMantou.m */; };
+		7AFBDAC428C457ED0025B588 /* RJLoadPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBDAC328C457ED0025B588 /* RJLoadPerson.m */; };
+		7AFBDAC728C458290025B588 /* RJLoadStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBDAC628C458290025B588 /* RJLoadStudent.m */; };
 		B5FA73C658F1AF26D31E67A5 /* libPods-RingDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D07283A3E3A63BAE5AFE96 /* libPods-RingDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +114,10 @@
 		7ACE886C28AA23AE0000E2C4 /* RJOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJOperation.m; sourceTree = "<group>"; };
 		7ACE886E28AA24130000E2C4 /* RJOperationMantou.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJOperationMantou.h; sourceTree = "<group>"; };
 		7ACE886F28AA24130000E2C4 /* RJOperationMantou.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJOperationMantou.m; sourceTree = "<group>"; };
+		7AFBDAC228C457ED0025B588 /* RJLoadPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJLoadPerson.h; sourceTree = "<group>"; };
+		7AFBDAC328C457ED0025B588 /* RJLoadPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJLoadPerson.m; sourceTree = "<group>"; };
+		7AFBDAC528C458290025B588 /* RJLoadStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJLoadStudent.h; sourceTree = "<group>"; };
+		7AFBDAC628C458290025B588 /* RJLoadStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJLoadStudent.m; sourceTree = "<group>"; };
 		F6D07283A3E3A63BAE5AFE96 /* libPods-RingDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RingDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FE9F9409395B17CB23E720 /* Pods-RingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingDemo.release.xcconfig"; path = "Target Support Files/Pods-RingDemo/Pods-RingDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -278,6 +284,7 @@
 		7A85BFCC2775C4E50089A00A /* RingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7AFBDABE28C457880025B588 /* load 和 initialize */,
 				7A06A94728C04DC800F0C892 /* FrameAndBounds */,
 				7A825E9528BA69370055E35C /* Block 底层实现 */,
 				7A825E5228BA3F380055E35C /* MVVMDemo */,
@@ -314,6 +321,17 @@
 				7ACE886F28AA24130000E2C4 /* RJOperationMantou.m */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		7AFBDABE28C457880025B588 /* load 和 initialize */ = {
+			isa = PBXGroup;
+			children = (
+				7AFBDAC228C457ED0025B588 /* RJLoadPerson.h */,
+				7AFBDAC328C457ED0025B588 /* RJLoadPerson.m */,
+				7AFBDAC528C458290025B588 /* RJLoadStudent.h */,
+				7AFBDAC628C458290025B588 /* RJLoadStudent.m */,
+			);
+			path = "load 和 initialize";
 			sourceTree = "<group>";
 		};
 		D0EEBA65194CA07A6369FA51 /* Pods */ = {
@@ -439,6 +457,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AFBDAC428C457ED0025B588 /* RJLoadPerson.m in Sources */,
 				7A4A6A5828BB7A0E0078667F /* RJBlockViewController.m in Sources */,
 				7A18DEC828A1FFDB00C34B8F /* RJPerson.m in Sources */,
 				7A06A94A28C04DE900F0C892 /* RJFrameAndBoundsViewController.m in Sources */,
@@ -451,6 +470,7 @@
 				7A68CF6528B92A6E00760292 /* UIView+RJConvenience.m in Sources */,
 				7A85BFD52775C4E50089A00A /* ViewController.m in Sources */,
 				7A0BAD4B28AB9D5F009C6461 /* RJAdapterViewController.m in Sources */,
+				7AFBDAC728C458290025B588 /* RJLoadStudent.m in Sources */,
 				7A825E5B28BA3FA40055E35C /* RJMVVMDemoViewController.m in Sources */,
 				7A0BAD5628AC7E9F009C6461 /* RJPropertyListReformer.m in Sources */,
 				7A0BADBD28B7546F009C6461 /* RJProxy.m in Sources */,

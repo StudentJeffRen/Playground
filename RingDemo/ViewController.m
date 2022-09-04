@@ -13,6 +13,8 @@
 #import "RJDrawerViewController.h"
 #import "RJFrameAndBoundsViewController.h"
 #import "RJBlockViewController.h"
+#import "RJLoadPerson.h"
+#import "RJLoadStudent.h"
 
 @interface ViewController ()
 
@@ -35,6 +37,8 @@
     
     [self dispatchGroup];
     
+    [RJLoadPerson alloc];
+    [RJLoadStudent alloc];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
