@@ -22,12 +22,15 @@
      2. Bounds is in terms of local coordinate system.
      修改 bounds 不会影响自己的位置，只是修改了自己坐标系的原点，进而影响到子视图的位置（因为子视图的 frame 参照的就是我的坐标系）。
      */
+    UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)];
     UIView *view1 = [[UIView alloc] initWithFrame:CGRectMake(100, 200, 200, 200)];
     view1.backgroundColor = [UIColor redColor];
+    [view1 addGestureRecognizer:gesture];
     [self.view addSubview:view1];
     
-    UIView *view2 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    UIView *view2 = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
     view2.backgroundColor = [UIColor yellowColor];
+    [view2 addGestureRecognizer:gesture];
     [view1 addSubview:view2];
     
     // 根据 bounds 的定义，view1 相对自己坐标原点的位置改成了 20, 20
@@ -39,10 +42,15 @@
     
     // 改变 bounds 宽高，不会改变 view1 的中心点，相当于缩放效果
     // 因为没改 x, y(坐标系原点)，所以 view2 会始终贴着 view1 移动
-    [UIView animateWithDuration:3.0 animations:^{
-        view1.bounds = CGRectMake(0, 0, 100, 100);
-    }];
+//    [UIView animateWithDuration:3.0 animations:^{
+//        view1.bounds = CGRectMake(0, 0, 100, 100);
+//    }];
+    
+    NSLog(@"内部%p", self.str);
 }
 
+- (void)tap {
+    NSLog(@"a");
+}
 
 @end

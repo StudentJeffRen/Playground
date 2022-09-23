@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RJFrameAndBoundsViewController : UIViewController
 
+@property (nonatomic, copy) NSString *str;
+
 @end
 
 NS_ASSUME_NONNULL_END
