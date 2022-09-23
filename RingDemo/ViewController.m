@@ -15,6 +15,8 @@
 #import "RJBlockViewController.h"
 #import "RJLoadPerson.h"
 #import "RJLoadStudent.h"
+#import "RJGCDDemoViewController.h"
+#import "RJKVOViewController.h"
 
 @interface ViewController ()
 
@@ -28,21 +30,10 @@
     [super viewDidLoad];
 //    UIImageView *imageView = [[UIImageView alloc] init];
 //    [imageView sd_setImageWithURL:[NSURL URLWithString:@""]];
-    
-//    RJPerson *person = [[RJPerson alloc] init];
-//    [person hello];
-    
-//    [self gcdSerialDemo];
-//    [self gcdConcurrentDemo];
-    
-    [self dispatchGroup];
-    
-    [RJLoadPerson alloc];
-    [RJLoadStudent alloc];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    RJFrameAndBoundsViewController *vc = [[RJFrameAndBoundsViewController alloc] init];
+    RJKVOViewController *vc = [[RJKVOViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -68,90 +59,6 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"%@", error);
     }];
-}
-
-- (void)gcdSerialDemo {
-    dispatch_queue_t serialQueue = dispatch_queue_create("cn.jeffren.serial", DISPATCH_QUEUE_SERIAL);
-    
-    // 当前线程：主线程
-    
-    // 对于同步任务，添加到串行队列，通常在和上下文相同的线程执行
-    dispatch_sync(serialQueue, ^{
-        // 任务加入自定义串行队列（不是主队列），所以不会产生死锁
-        sleep(3);
-        NSLog(@"task 1 %@", NSThread.currentThread);
-    });
-    
-    dispatch_sync(serialQueue, ^{
-        NSLog(@"task 2 %@", NSThread.currentThread);
-    });
-    
-    // 异步任务，添加到串行队列，通常在另一个线程执行
-    dispatch_async(serialQueue, ^{
-        NSLog(@"task 3 %@", NSThread.currentThread);
-    });
-    
-    dispatch_async(serialQueue, ^{
-        NSLog(@"task 4 %@", NSThread.currentThread);
-    });
-    
-    NSLog(@"test end %@", NSThread.currentThread);
-}
-
-- (void)gcdConcurrentDemo {
-    dispatch_queue_t concurrentQueue = dispatch_queue_create("cn.jeffren.concurrent", DISPATCH_QUEUE_CONCURRENT);
-    
-    // 当前线程：主线程
-    
-    // 对于同步任务，通常在和上下文相同的线程执行
-    dispatch_sync(concurrentQueue, ^{
-        sleep(3);
-        NSLog(@"task 1 %@", NSThread.currentThread);
-    });
-    
-    dispatch_sync(concurrentQueue, ^{
-        NSLog(@"task 2 %@", NSThread.currentThread);
-    });
-    
-    // 异步任务，添加到并行队列，通常在另一个线程执行，顺序不确定
-    dispatch_async(concurrentQueue, ^{
-        NSLog(@"task 3 %@", NSThread.currentThread);
-    });
-    
-    dispatch_async(concurrentQueue, ^{
-        NSLog(@"task 4 %@", NSThread.currentThread);
-    });
-    
-    NSLog(@"test end %@", NSThread.currentThread);
-}
-
-- (void)dispatchGroup {
-    dispatch_group_t group = dispatch_group_create();
-    dispatch_queue_t queue = dispatch_queue_create("my_queue", DISPATCH_QUEUE_CONCURRENT);
-    
-    dispatch_group_async(group, queue, ^{
-        NSLog(@"A");
-    });
-    
-    dispatch_group_async(group, queue, ^{
-        NSLog(@"B");
-    });
-    
-    dispatch_group_notify(group, queue, ^{
-        NSLog(@"C");
-    });
-}
-
-// 使用场景：读写安全
-- (void)dispatchBarrier {
-    dispatch_queue_t queue = dispatch_queue_create("rw_queue", DISPATCH_QUEUE_CONCURRENT);
-    dispatch_async(queue, ^{
-        
-    });
-    
-    dispatch_barrier_async(queue, ^{
-        // 在前面提交到队列中的任务执行完之前，栅栏 block 不会执行
-    });
 }
 
 @end
