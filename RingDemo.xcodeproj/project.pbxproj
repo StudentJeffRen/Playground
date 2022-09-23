@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7A06A94A28C04DE900F0C892 /* RJFrameAndBoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A06A94928C04DE900F0C892 /* RJFrameAndBoundsViewController.m */; };
+		7A06A94E28C5CD0400F0C892 /* RJGCDDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A06A94D28C5CD0400F0C892 /* RJGCDDemoViewController.m */; };
 		7A0BAD4B28AB9D5F009C6461 /* RJAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0BAD4A28AB9D5F009C6461 /* RJAdapterViewController.m */; };
 		7A0BAD4F28AB9E85009C6461 /* RJAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0BAD4E28AB9E85009C6461 /* RJAPIManager.m */; };
 		7A0BAD5628AC7E9F009C6461 /* RJPropertyListReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0BAD5528AC7E9F009C6461 /* RJPropertyListReformer.m */; };
@@ -48,6 +49,8 @@
 		5EC3A0CA3388C87596AADC4D /* Pods-RingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingDemo.debug.xcconfig"; path = "Target Support Files/Pods-RingDemo/Pods-RingDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		7A06A94828C04DE900F0C892 /* RJFrameAndBoundsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJFrameAndBoundsViewController.h; sourceTree = "<group>"; };
 		7A06A94928C04DE900F0C892 /* RJFrameAndBoundsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJFrameAndBoundsViewController.m; sourceTree = "<group>"; };
+		7A06A94C28C5CD0400F0C892 /* RJGCDDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJGCDDemoViewController.h; sourceTree = "<group>"; };
+		7A06A94D28C5CD0400F0C892 /* RJGCDDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJGCDDemoViewController.m; sourceTree = "<group>"; };
 		7A0BAD4928AB9D5F009C6461 /* RJAdapterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAdapterViewController.h; sourceTree = "<group>"; };
 		7A0BAD4A28AB9D5F009C6461 /* RJAdapterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAdapterViewController.m; sourceTree = "<group>"; };
 		7A0BAD4C28AB9E5C009C6461 /* RJReformerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJReformerProtocol.h; sourceTree = "<group>"; };
@@ -149,6 +152,15 @@
 				7A06A94928C04DE900F0C892 /* RJFrameAndBoundsViewController.m */,
 			);
 			path = FrameAndBounds;
+			sourceTree = "<group>";
+		};
+		7A06A94B28C5CCF200F0C892 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				7A06A94C28C5CD0400F0C892 /* RJGCDDemoViewController.h */,
+				7A06A94D28C5CD0400F0C892 /* RJGCDDemoViewController.m */,
+			);
+			path = GCD;
 			sourceTree = "<group>";
 		};
 		7A0BAD4828AB9D2D009C6461 /* Adapter */ = {
@@ -284,6 +296,7 @@
 		7A85BFCC2775C4E50089A00A /* RingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7A06A94B28C5CCF200F0C892 /* GCD */,
 				7AFBDABE28C457880025B588 /* load 和 initialize */,
 				7A06A94728C04DC800F0C892 /* FrameAndBounds */,
 				7A825E9528BA69370055E35C /* Block 底层实现 */,
@@ -468,6 +481,7 @@
 				7A0BAD6328ACE8F6009C6461 /* RJPersistanceViewController.m in Sources */,
 				7ACE886A28AA23690000E2C4 /* RJSimpleFactory.m in Sources */,
 				7A68CF6528B92A6E00760292 /* UIView+RJConvenience.m in Sources */,
+				7A06A94E28C5CD0400F0C892 /* RJGCDDemoViewController.m in Sources */,
 				7A85BFD52775C4E50089A00A /* ViewController.m in Sources */,
 				7A0BAD4B28AB9D5F009C6461 /* RJAdapterViewController.m in Sources */,
 				7AFBDAC728C458290025B588 /* RJLoadStudent.m in Sources */,
