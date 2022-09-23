@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RJKVOViewController : UIViewController
 
+@property (nonatomic, assign, readonly) int age;
+
 @end
 
 NS_ASSUME_NONNULL_END
