@@ -41,6 +41,7 @@
 		7ACE886D28AA23AE0000E2C4 /* RJOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE886C28AA23AE0000E2C4 /* RJOperation.m */; };
 		7ACE887028AA24130000E2C4 /* RJOperationMantou.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE886F28AA24130000E2C4 /* RJOperationMantou.m */; };
 		7AD88C6328DDAE010072925C /* RJKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD88C6228DDAE010072925C /* RJKVOViewController.m */; };
+		7AD88C6628E1B1560072925C /* RJKVOViewController+CategoryProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD88C6528E1B1560072925C /* RJKVOViewController+CategoryProperty.m */; };
 		7AFBDAC428C457ED0025B588 /* RJLoadPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBDAC328C457ED0025B588 /* RJLoadPerson.m */; };
 		7AFBDAC728C458290025B588 /* RJLoadStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBDAC628C458290025B588 /* RJLoadStudent.m */; };
 		B5FA73C658F1AF26D31E67A5 /* libPods-RingDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D07283A3E3A63BAE5AFE96 /* libPods-RingDemo.a */; };
@@ -120,6 +121,8 @@
 		7ACE886F28AA24130000E2C4 /* RJOperationMantou.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJOperationMantou.m; sourceTree = "<group>"; };
 		7AD88C6128DDAE010072925C /* RJKVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJKVOViewController.h; sourceTree = "<group>"; };
 		7AD88C6228DDAE010072925C /* RJKVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJKVOViewController.m; sourceTree = "<group>"; };
+		7AD88C6428E1B1560072925C /* RJKVOViewController+CategoryProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RJKVOViewController+CategoryProperty.h"; sourceTree = "<group>"; };
+		7AD88C6528E1B1560072925C /* RJKVOViewController+CategoryProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RJKVOViewController+CategoryProperty.m"; sourceTree = "<group>"; };
 		7AFBDAC228C457ED0025B588 /* RJLoadPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJLoadPerson.h; sourceTree = "<group>"; };
 		7AFBDAC328C457ED0025B588 /* RJLoadPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJLoadPerson.m; sourceTree = "<group>"; };
 		7AFBDAC528C458290025B588 /* RJLoadStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJLoadStudent.h; sourceTree = "<group>"; };
@@ -345,6 +348,8 @@
 			children = (
 				7AD88C6128DDAE010072925C /* RJKVOViewController.h */,
 				7AD88C6228DDAE010072925C /* RJKVOViewController.m */,
+				7AD88C6428E1B1560072925C /* RJKVOViewController+CategoryProperty.h */,
+				7AD88C6528E1B1560072925C /* RJKVOViewController+CategoryProperty.m */,
 			);
 			path = KVO;
 			sourceTree = "<group>";
@@ -492,6 +497,7 @@
 				7A0BADC728B7702F009C6461 /* RJTimer.m in Sources */,
 				7A82A78B2893CE9100F068EC /* RJReadWriteSecurityViewController.m in Sources */,
 				7A0BAD6328ACE8F6009C6461 /* RJPersistanceViewController.m in Sources */,
+				7AD88C6628E1B1560072925C /* RJKVOViewController+CategoryProperty.m in Sources */,
 				7ACE886A28AA23690000E2C4 /* RJSimpleFactory.m in Sources */,
 				7A68CF6528B92A6E00760292 /* UIView+RJConvenience.m in Sources */,
 				7A06A94E28C5CD0400F0C892 /* RJGCDDemoViewController.m in Sources */,
