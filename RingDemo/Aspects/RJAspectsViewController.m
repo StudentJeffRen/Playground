@@ -6,6 +6,7 @@
 //
 
 #import "RJAspectsViewController.h"
+#import <Aspects.h>
 
 @interface RJAspectsViewController ()
 
@@ -15,7 +16,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self hookInstance];
+    [self hookClass];
+}
+
+- (void)hookInstance {
+    [self aspect_hookSelector:@selector(viewWillAppear:) withOptions:AspectPositionBefore usingBlock:^{
+        NSLog(@"Instance Hello1");
+    } error:nil];
+    
+    [self aspect_hookSelector:@selector(viewWillAppear:) withOptions:AspectPositionBefore usingBlock:^{
+        NSLog(@"Instance Hello2");
+    } error:nil];
+    // 现在，实例对象 self 的 viewWillAppear 方法的 before 容器中，有两个 hook 信息
+    
+    [self aspect_hookSelector:@selector(viewDidAppear:) withOptions:AspectPositionBefore usingBlock:^{
+        NSLog(@"Instance Hello3");
+    } error:nil];
+    // 现在，实例对象 self 的 viewDidAppear 方法的 before 容器中，有一个 hook 信息
+}
+
+- (void)hookClass {
+    [UIViewController aspect_hookSelector:@selector(viewDidAppear:) withOptions:AspectPositionBefore usingBlock:^{
+        NSLog(@"Class Hello Before");
+    } error:nil];
+    
+    [UIViewController aspect_hookSelector:@selector(viewDidAppear:) withOptions:AspectPositionAfter usingBlock:^{
+        NSLog(@"Class Hello After");
+    } error:nil];
+    
+    [UIViewController aspect_hookSelector:@selector(viewDidAppear:) withOptions:AspectPositionBefore usingBlock:^{
+        NSLog(@"Class Hello Before Duplicate");
+    } error:nil];
+    
+    // 不生效并且报错: viewDidAppear: already hooked in UIViewController. A method can only be hooked once per class hierarchy.
+    [RJAspectsViewController aspect_hookSelector:@selector(viewDidAppear:) withOptions:AspectPositionBefore usingBlock:^{
+        NSLog(@"Class Hello Before Subclass Duplicate");
+    } error:nil];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
