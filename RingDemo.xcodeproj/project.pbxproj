@@ -40,6 +40,8 @@
 		7A85BFDA2775C4E60089A00A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A85BFD92775C4E60089A00A /* Assets.xcassets */; };
 		7A85BFE02775C4E60089A00A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A85BFDF2775C4E60089A00A /* main.m */; };
 		7A94FE0928EB7A3400211EF8 /* RJTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A94FE0828EB7A3400211EF8 /* RJTableView.m */; };
+		7AB1215F290AAAFC0096DFBF /* UIButton+EnlargeTouchArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB1215E290AAAFC0096DFBF /* UIButton+EnlargeTouchArea.m */; };
+		7AB12163290AAC5C0096DFBF /* RJEnlargeButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB12162290AAC5C0096DFBF /* RJEnlargeButtonViewController.m */; };
 		7ACE886A28AA23690000E2C4 /* RJSimpleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE886928AA23690000E2C4 /* RJSimpleFactory.m */; };
 		7ACE886D28AA23AE0000E2C4 /* RJOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE886C28AA23AE0000E2C4 /* RJOperation.m */; };
 		7ACE887028AA24130000E2C4 /* RJOperationMantou.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE886F28AA24130000E2C4 /* RJOperationMantou.m */; };
@@ -123,6 +125,10 @@
 		7A85BFDF2775C4E60089A00A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7A94FE0728EB7A3400211EF8 /* RJTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJTableView.h; sourceTree = "<group>"; };
 		7A94FE0828EB7A3400211EF8 /* RJTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJTableView.m; sourceTree = "<group>"; };
+		7AB1215D290AAAFC0096DFBF /* UIButton+EnlargeTouchArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+EnlargeTouchArea.h"; sourceTree = "<group>"; };
+		7AB1215E290AAAFC0096DFBF /* UIButton+EnlargeTouchArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EnlargeTouchArea.m"; sourceTree = "<group>"; };
+		7AB12161290AAC5C0096DFBF /* RJEnlargeButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJEnlargeButtonViewController.h; sourceTree = "<group>"; };
+		7AB12162290AAC5C0096DFBF /* RJEnlargeButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJEnlargeButtonViewController.m; sourceTree = "<group>"; };
 		7ACE886828AA23690000E2C4 /* RJSimpleFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJSimpleFactory.h; sourceTree = "<group>"; };
 		7ACE886928AA23690000E2C4 /* RJSimpleFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJSimpleFactory.m; sourceTree = "<group>"; };
 		7ACE886B28AA23AE0000E2C4 /* RJOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJOperation.h; sourceTree = "<group>"; };
@@ -314,6 +320,7 @@
 		7A85BFCC2775C4E50089A00A /* RingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7AB12160290AAC400096DFBF /* 增大点击范围 */,
 				7A94FE0628EB7A1000211EF8 /* ScrollView 实现 TableView */,
 				7AD88C6728E3E7870072925C /* Aspects */,
 				7AD88C6028DDADEA0072925C /* KVO */,
@@ -355,6 +362,17 @@
 				7A7A117E28EB7F6800F0A51B /* RJScrollViewCell.m */,
 			);
 			path = "ScrollView 实现 TableView";
+			sourceTree = "<group>";
+		};
+		7AB12160290AAC400096DFBF /* 增大点击范围 */ = {
+			isa = PBXGroup;
+			children = (
+				7AB1215D290AAAFC0096DFBF /* UIButton+EnlargeTouchArea.h */,
+				7AB1215E290AAAFC0096DFBF /* UIButton+EnlargeTouchArea.m */,
+				7AB12161290AAC5C0096DFBF /* RJEnlargeButtonViewController.h */,
+				7AB12162290AAC5C0096DFBF /* RJEnlargeButtonViewController.m */,
+			);
+			path = "增大点击范围";
 			sourceTree = "<group>";
 		};
 		7ACE886728AA23330000E2C4 /* Factory */ = {
@@ -562,7 +580,9 @@
 				7A68CF6228B923F800760292 /* RJDrawerView.m in Sources */,
 				7A0BADB428B4B863009C6461 /* RJViewController.m in Sources */,
 				7A0BADC428B760C8009C6461 /* RJTest.m in Sources */,
+				7AB1215F290AAAFC0096DFBF /* UIButton+EnlargeTouchArea.m in Sources */,
 				7A825E5A28BA3FA40055E35C /* RJPersonViewModel.m in Sources */,
+				7AB12163290AAC5C0096DFBF /* RJEnlargeButtonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
